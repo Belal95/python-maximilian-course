@@ -30,6 +30,8 @@ def add_transition_value(transaction_amount, last_transaction=[1]):
     Arguments:
         :transaction_amount: The amount that should be added
     """
+    if last_transaction == None:
+        last_transaction = [1]
     blockchain.append([last_transaction, transaction_amount])
 
 
